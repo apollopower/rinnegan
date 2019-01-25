@@ -3,11 +3,14 @@ import cv2
 
 from person import Person
 
+import pdb
 
-face_cascade = cv2.CascadeClassifier('haar_cascades/haarcascade_frontalface_default.xml')
+
+face_cascade = cv2.CascadeClassifier('haar_cascades/haarcascade_face.xml')
 eye_cascade = cv2.CascadeClassifier('haar_cascades/haarcascade_eye.xml')
 
 def generate_people(img):
+        # pdb.set_trace()
         people = []
 
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

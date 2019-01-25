@@ -4,6 +4,8 @@ import cv2
 from person import Person
 from data_processor import generate_people
 
+import pdb
+
 # Load Image
 img = cv2.imread('./assets/jonas.jpg', 1)
 

@@ -5,8 +5,8 @@ import cv2
 
 cap = cv2.VideoCapture(0)
 
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
+face_cascade = cv2.CascadeClassifier('haar_cascades/haarcascade_face.xml')
+eye_cascade = cv2.CascadeClassifier('haar_cascades/haarcascade_eye.xml')
 
 while True:
     # Capture frame by frame
